@@ -1,0 +1,529 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .container
+    padding: 0 28px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1090px)
+  .list-company
+    justify-content: flex-start
+    margin: 0 0 22px
+
+    li
+      margin: 0 17px 18px 0
+
+      &:last-child
+        margin: 0 0 18px 0
+
+
+@media only screen and (max-width: 1040px)
+  .opportunities-box
+    margin: 0 0 64px
+
+  .rate-box
+    margin: 0 0 22px
+
+    h3
+      margin: 0 0 26px
+
+    &:last-child
+      height: auto
+
+      .social-wrapper
+        margin: 40px 0 0
+
+  .rate
+    padding: 83px 0 70px
+
+  .reviews:before, .reviews:after
+    display: none
+
+  .reviews
+    padding: 78px 0 81px
+
+  .reviews-box
+    max-width: 485px
+    flex-wrap: wrap
+    padding: 49px 71px 27px
+
+  .reviews-box__info ul
+    margin: 10px 0 0
+
+  .reviews-box__info ul li
+    margin: 0 0 7px
+
+  .reviews-box__info h3
+    margin: 0
+
+  .reviews-box__text
+    width: 343px
+    margin: 59px auto 0
+
+  .is-free__form
+    margin: 0
+
+    .container
+      flex-direction: column
+      align-items: center
+      padding: 45px 20px 54px
+      border-radius: 0
+
+      .description
+        margin: 19px auto 30px
+        text-align: center
+
+  footer
+    padding: 25px 0 37px
+
+@media only screen and (max-width: 992px)
+  .container
+    padding: 0 28px
+
+  header
+    padding: 37px 0 0
+
+    .menu
+      display: none
+
+    .logo
+      margin: 0
+
+  .btn-burger
+    display: flex
+
+  h1
+    text-align: center
+    margin: 0 auto
+
+  .main-content
+    max-width: none
+
+  main
+    margin: 84px 0 41px
+
+    .container
+      flex-direction: column
+      align-items: center
+
+    .btn
+      margin: 0 auto
+      position: relative
+      z-index: 1
+
+    .description
+      text-align: center
+      max-width: 660px
+      margin: 22px auto 37px
+
+  .main-image
+    width: 542px
+    margin: -30px auto 0
+
+  .connected h6
+    margin: 0 20px 0 0
+
+  .advantages
+    margin: 80px 0
+    padding: 90px 0 121px
+
+    .container
+      padding: 0 20px
+
+  .stages-work__box
+    margin: 0 0 40px
+
+  .stages-work__content
+    justify-content: space-around
+    margin: 0 0 40px
+
+  .opportunities
+    padding: 80px 0 16px
+
+  .reviews-nav
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .slick-prev, .slick-next
+      position: relative
+
+    .slick-prev
+      margin: 0 14px 0 0
+
+  .footer-box
+    flex-direction: column
+    align-items: flex-start
+
+    .logo
+      margin: 0 0 16px
+
+    .social-wrapper
+      margin: 0 0 18px
+
+    .list-social
+      li
+        a
+          width: 36px
+          height: 36px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 860px)
+  .opportunities-content
+    justify-content: flex-start
+
+  .opportunities-box
+    margin: 0 33px 64px 0
+
+    &:last-child
+      margin: 0 0 64px
+
+    .text
+      p
+        &:last-child
+          margin: 0
+
+
+@media only screen and (max-width: 768px)
+  .all-area
+    margin: 36px auto 30px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 737px)
+  .advantages-box
+    .text
+      font-size: 14px
+
+    .num
+      font-size: 54.5px
+
+@media only screen and (max-width: 670px)
+  header
+    .social-wrapper, .btn
+      display: none
+
+  .logo
+    width: 152px
+
+  .btn-burger
+    margin: 0
+
+  header
+    padding: 9px 0 0
+
+  .container
+    padding: 0 20px
+
+  main
+    margin: 51px 0 23px
+
+    .description
+      margin: 23px auto 32px
+      font-size: 14px
+      max-width: 332px
+
+    .btn
+      width: 248px
+      height: 58px
+      font-size: 20px
+
+  h1
+    font-size: 24px
+
+  .main-image
+    width: 100%
+
+  .connected
+    h6
+      margin: 0 auto 10px
+      display: block
+      text-align: center
+
+  .advantages-box
+    margin: 0 0 28px
+
+    &:nth-last-child(even)
+      margin: 0 0 26px
+
+      .num
+        margin: 0 21px 0 0
+
+    .icon
+      display: none
+
+    .text
+      max-width: 200px
+
+      br
+        display: none
+
+    .num
+      margin: 0 0 0 19px
+
+  h2
+    font-size: 20px
+
+  .stages-work__box
+    flex-direction: row
+    align-items: center
+    max-width: none
+    margin: 0 0 16px
+    text-align: left
+    font-size: 14px
+
+    &:last-child
+      margin: 0
+
+    .icon
+      margin: 0 27px 0 0
+      width: 74px
+      min-width: 74px
+
+  .stages-work__content
+    margin: 26px 0 46px
+
+  .is-free
+    padding: 37px 0 35px
+
+    h3
+      font-size: 20px
+
+    .description
+      font-size: 16px
+      margin: 11px auto 21px
+
+    .btn
+      width: 250px
+      height: 51px
+      font-size: 15.5px
+
+    .text-time
+      margin: 29px auto 0
+      font-size: 14px
+      max-width: 360px
+
+  .opportunities
+    padding: 40px 0 61px
+
+  .opportunities-nav
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .slick-prev, .slick-next
+      position: relative
+
+    .slick-prev
+      margin: 0 14px 0 0
+
+  .opportunities-box
+    margin: 0 33px 54px 0
+
+  .rate
+    padding: 40px 0 52px
+
+  .rate-box
+    margin: 0 0 30px
+
+    &:last-child
+      margin: 0
+
+    &:nth-child(2)
+      margin: 0 0 30px
+
+  .reviews
+    padding: 42px 0 60px
+
+  .reviews-box
+    max-width: 337px
+    padding: 32px 18px 12px
+    margin: 0 auto 38px
+
+    .avatar
+      width: 93px
+      height: 93px
+
+  .reviews-box__info
+    margin: 0 auto 0 30px
+
+    h3
+      font-size: 18px
+      margin: 0 0 5px
+
+    .links
+      font-size: 14px
+
+    ul
+      width: 156px
+      font-size: 16px
+
+  .is-free__form
+    .container
+      padding: 37px 20px 40px
+
+    h3
+      font-size: 20px
+      text-align: center
+
+    .description
+      margin: 11px auto 21px
+      font-size: 16px
+
+    .btn
+      width: 250px
+      height: 51px
+      font-size: 15.5px
+
+
+@media only screen and (max-width: 480px)
+  .main-image
+    margin: 0 auto
+
+    img
+      display: none
+
+    .img-mobile
+      display: block
+
+  .list-company
+    justify-content: space-between
+
+    li
+      width: 75px
+      height: 75px
+      margin: 0 0 11px
+      padding: 10px
+
+      &:last-child
+        display: none
+
+      &:nth-last-child(2)
+        margin: 0 0 11px
+
+  .btn-add
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    font-size: 15px
+    color: #878aa1
+    text-align: left
+    width: 100%
+
+    span
+      font-weight: bold
+      font-size: 25px
+
+  .area-image
+    margin: 0 0 13px
+
+    img
+      display: none
+
+    .img-mobile
+      display: block
+
+  .all-area
+    margin: 30px 0 24px
+
+  .connected .list li
+    font-size: 14px
+
+  .advantages
+    margin: 45px 0 59px
+
+  .reviews
+    .container
+      padding: 0
+
+  footer
+    padding: 38px 0 40px
+
+  .footer-box
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    &:nth-child(2)
+      display: none
+    .links
+      font-size: 13px
+    .logo
+      width: 104px
+      margin: 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .mobile-menu
+    width: 290px
+
+  .mobile-menu__wrapper .menu li a
+    font-size: 18px
+
+  .mobile-menu__wrapper .menu
+    margin: 0 0 100px
+
+  .mobile-menu__wrapper
+    padding: 50px 35px
+
+  .mobile-menu__wrapper .btn-close
+    width: 20px
+    height: 20px
+
+@media only screen and (max-width: 385px)
+  .advantages-box
+    flex-direction: column
+    align-items: center
+
+    .num
+      order: -1
+      margin: 0 auto 10px
+      line-height: 1
+
+    &:nth-last-child(even)
+      .num
+        margin: 0 auto 10px
+
+      .text
+        text-align: center
+
+    .text
+      max-width: none
+      text-align: center
+
+  .reviews-slider
+    margin: 22px auto 0
+
+@media only screen and (max-width: 360px)
+  .list-company
+    justify-content: space-around
+
+  .reviews-box
+    max-width: 97%
+
+    .reviews-box__info
+      margin: 0 auto 0 10px
+
+  .footer-box
+    flex-direction: column
+    align-items: center
+    .logo
+      margin: 0 auto 10px
+
+  .modal__div
+    width: 100%
+
+  .form button
+    width: 100%
+
+  .modal-title
+    font-size: 16px
+

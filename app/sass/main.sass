@@ -1,0 +1,1305 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+
+  &:hover, &:focus
+    outline: none
+    text-decoration: none
+
+.container
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  max-width: 1140px
+
+.logo
+  width: 189px
+  margin: 0 55px 0 0
+  mix-blend-mode: darken
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.btn-white
+  border-radius: 5px
+  border: solid 1px rgba(#505fdb, .3)
+  color: #505fdb
+  font-size: 16px
+
+  &:hover
+    background: #505fdb
+    color: #fff
+
+.btn-red
+  border-radius: 5px
+  background-color: #ff3131
+  font-size: 20px
+  color: #fff
+  font-family: 'SFUIDisplay-Bold', sans-serif
+
+  &:hover
+    background: #e22b2b
+
+.btn-order
+  border: solid 1px #ff3131
+    radius: 5px
+  width: 220px
+  height: 50px
+  font-size: 20px
+  color: #ff3131
+  font-family: 'SFUIDisplay-Regular', sans-serif
+
+  &:hover
+    background: #ff3131
+    color: #fff
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  width: 35px
+  height: 24px
+  margin: 0 0 0 35px
+
+  span
+    display: block
+    width: 100%
+    background: #505fdb
+    border-radius: 2px
+    height: 4px
+
+
+//header
+header
+  padding: 13px 0 0
+  position: relative
+  z-index: 1
+
+  .container
+    justify-content: space-between
+    align-items: center
+
+  .btn
+    width: 91px
+    height: 36px
+
+  .list-social
+    li
+      a
+        opacity: .6
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 20px 0 0
+
+  li
+    margin: 0 13px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      width: 37px
+      height: 37px
+
+.social-wrapper
+  display: flex
+  align-items: center
+  margin: 0 55px 0 auto
+
+  p
+    color: #2c2c2c
+    font-size: 16px
+    max-width: 81px
+    width: 100%
+
+.menu
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+  li
+    margin: 0 40px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      font-size: 18px
+      color: #505fdb
+
+      &:hover
+        color: #000
+
+//main
+main
+  margin: 0 0 45px
+
+  .container
+    align-items: center
+    justify-content: space-between
+
+  .btn
+    width: 280px
+    height: 65px
+
+h1
+  font-size: 44px
+  font-family: 'SFUIDisplay-Bold', sans-serif
+
+.main-image
+  width: 587px
+  margin: -20px -70px 0 0
+  mix-blend-mode: darken
+
+.main-content
+  max-width: calc(100% - 525px)
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.description
+  margin: 22px 0 37px
+  line-height: 1.44
+  font-size: 18px
+  color: #1d1d1d
+
+  sup
+    font-size: 26px
+    line-height: .7
+
+.color-violet
+  color: #505fdb
+
+//area
+.area
+  .container
+    flex-direction: column
+    align-items: center
+
+.list-company
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 33px
+
+  li
+    width: 112px
+    height: 112px
+    border-radius: 22px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    background-color: #ffffff
+
+    &:first-child
+      box-shadow: 0 5px 24px 0 rgba(1, 174, 136, 0.2)
+      background-color: #01ae88
+
+    &:nth-child(2)
+      box-shadow: 0 5px 24px 0 rgba(255, 59, 59, 0.2)
+
+    &:nth-child(3)
+      box-shadow: 0px 5px 24px 0 rgba(255, 59, 59, 0.2)
+
+    &:nth-child(4)
+      box-shadow: 0px 5px 24px 0 rgba(175, 202, 11, 0.2)
+
+    &:nth-child(5)
+      box-shadow: 0px 5px 24px 0 rgba(33, 165, 97, 0.2)
+
+    &:nth-child(6)
+      box-shadow: 0px 5px 24px 0 rgba(255, 59, 59, 0.2)
+
+    &:nth-child(7)
+      box-shadow: 0px 5px 24px 0 rgba(92, 199, 71, 0.2)
+      background-color: #5cc747
+
+    &:nth-child(8)
+      box-shadow: 0px 5px 24px 0 rgba(46, 104, 223, 0.2)
+      background-color: #2e68df
+
+    &:last-child
+      display: flex
+      flex-direction: column
+      border: solid 1px #505fdb
+      text-align: center
+      font-family: 'Roboto', sans-serif
+      font-size: 13.5px
+      color: #505fdb
+
+      span
+        display: flex
+        text-align: center
+        line-height: 0.54
+        margin: 0 auto 7px
+        font-size: 35px
+        font-weight: 500
+
+      p
+        line-height: 1.11
+
+.all-area
+  width: 100%
+  margin: 36px auto 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.btn-area
+  width: 183px
+  height: 40px
+  background: #f6f7fb
+  border-radius: 10px 10px 0 0
+  color: #505fdb
+  font-size: 16px
+
+  .icon
+    width: 9px
+    margin: 0 0 0 9px
+    transform: scale(1, -1)
+
+.btn-area.open
+  .icon
+    transform: none
+
+.connected
+  width: 100%
+  background: #f6f7fb
+  border-radius: 10px
+  padding: 32px 10px 33px
+  display: none
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+  color: #1d1d1d
+
+  h6
+    color: #1d1d1d
+    font-weight: 600
+    font-size: 14px
+    margin: 0 129px 0 0
+    display: inline
+
+  .list
+    display: inline-flex
+    align-items: center
+    flex-wrap: wrap
+
+    li
+      margin: 0 15px 0 0
+      font-size: 16px
+
+      &:last-child
+        margin: 0
+
+.explanation
+  color: #5b5b5b
+  font-size: 13px
+  line-height: 1.23
+  text-align: center
+
+  sup
+    color: #505fdb
+    font-size: 26px
+    line-height: 1
+
+//advantages
+.advantages
+  margin: 57px 0 119px
+  background: url("../img/main-bg.jpg") no-repeat center
+    size: cover
+  color: #fff
+  padding: 90px 0 132px
+
+.advantages-box
+  width: 100%
+  font-size: 18px
+  font-weight: 600
+  line-height: 1.33
+  margin: 0 0 48px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+  &:last-child
+    margin: 0
+
+  .text
+    max-width: 320px
+    width: 100%
+    text-align: right
+
+  .num
+    font-size: 100px
+    font-family: 'SFUIDisplay-Black', sans-serif
+    margin: 0 26px 0 41px
+    line-height: 0.2
+
+  &:nth-last-child(even)
+    margin: 0 0 32px
+
+    .num
+      margin: 0 41px 0 26px
+
+    .text
+      text-align: left
+
+h2
+  width: 100%
+  text-align: center
+  position: relative
+  margin: 0 auto
+  padding: 0 0 17px
+  color: #28292a
+  font-size: 32px
+  font-family: 'SFUIDisplay-Bold', sans-serif
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translate(-50%, 0)
+    width: 49px
+    height: 3px
+    background: #505fdb
+
+.stages-work__content
+  width: 100%
+  margin: 52px 0 0
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.stages-work__box
+  max-width: 275px
+  width: 1005px
+  display: flex
+  flex-direction: column
+  align-items: center
+  line-height: 1.63
+  color: #28292a
+  text-align: center
+  margin: 0 0 119px
+
+  .icon
+    width: 130px
+
+.is-free
+  background: url("../img/bg.jpg") no-repeat center
+    size: cover
+  color: #fff
+  padding: 88px 0 87px
+
+  .container
+    flex-direction: column
+    align-items: center
+
+  h3
+    text-align: center
+    font-size: 38px
+    font-family: 'SFUIDisplay-Bold', sans-serif
+
+  .description
+    font-size: 26px
+    text-align: center
+    margin: 18px auto 29px
+    color: #fff
+    max-width: 580px
+    width: 100%
+
+  .btn
+    width: 320px
+    height: 65px
+
+.text-time
+  text-align: center
+  margin: 31px auto 0
+  color: #b6befb
+  font-size: 14px
+  max-width: 600px
+  width: 100%
+
+//opportunities
+.opportunities
+  padding: 120px 0 92px
+
+.w-100
+  width: 100%
+
+.opportunities-content
+  margin: 33px 0 0 0
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.opportunities-box
+  width: 100%
+  max-width: 196px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  color: #28292a
+
+  .number
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    border-radius: 50%
+    width: 56px
+    height: 56px
+    background: rgba(#505fdb, .2)
+    color: #fff
+    font-size: 20px
+    font-weight: 600
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      box-shadow: 0px 5px 24px 0 rgba(80, 95, 219, 0.48)
+      background-color: #505fdb
+      border-radius: 50%
+      width: 36px
+      height: 36px
+
+    span
+      display: inline-block
+      position: relative
+      z-index: 1
+
+  h3
+    margin: 24px 0 17px
+    font-size: 18px
+    font-weight: bold
+
+  .text
+    font-size: 14px
+
+    p
+      margin: 0 0 15px
+
+      &:last-child
+        margin: 0
+
+    span
+      font-size: 12px
+      margin: 0 0 20px
+      display: inline-block
+
+      &:last-child
+        margin: 0
+
+    .color-violet
+      font-size: 13px
+      margin: 0 0 20px
+
+      &:last-child
+        margin: 0
+
+  .img
+    width: 182px
+    margin: 0 auto
+
+.box-disabled
+  color: #6b6d6e
+
+  .number
+    background: rgba(#6b6d6e, .2)
+    opacity: .4
+
+    &:before
+      background: #6b6d6e
+      box-shadow: 0px 5px 24px 0 rgba(107, 109, 110, 0.48)
+
+//rate
+.rate
+  background: #f6f7fb
+  padding: 122px 0 121px
+
+  .container
+    flex-direction: column
+    align-items: center
+
+.btn-group
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 22px 0 30px
+
+.btn-rate
+  font-size: 16px
+  padding: 8px 22.5px
+  border: dashed 1px #505fdb
+  color: #505fdb
+
+  &:first-child
+    border:
+      radius: 10px 0 0 10px
+      right: none
+
+  &:last-child
+    border: dashed 1px #505fdb
+      left: none
+      radius: 0 10px 10px 0
+
+.btn-active
+  background: #505fdb
+  color: #fff
+
+.rate-content
+  display: none
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: center
+
+.rate-content.active
+  display: flex
+
+.rate-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  box-shadow: 0px 5px 24px 0 rgba(141, 149, 214, 0.11)
+  background-color: #ffffff
+  width: 300px
+  height: 484px
+  padding: 39px 34px 31px 40px
+  border-radius: 15px
+
+  &:nth-child(2)
+    margin: 0 20px
+
+  h3
+    text-align: center
+    color: #212121
+    font-size: 26px
+    font-family: 'SFUIDisplay-Bold', sans-serif
+    margin: 0 auto 32px
+
+  .sale
+    text-align: center
+    width: 100%
+    max-width: 170px
+    color: #28292a
+    font-size: 14px
+    margin: 0 auto 20px
+
+    p
+      display: inline
+      font-family: 'Roboto', sans-serif
+
+  .price-wrapper
+    display: flex
+    align-items: flex-start
+    color: #28292a
+
+    sup
+      font-size: 27px
+      font-weight: bold
+      margin: 5px 0 -4px
+
+    .price
+      font-size: 45px
+      font-weight: 900
+
+    sub
+      margin: auto 0 10px 0
+
+  .social-wrapper
+    margin: 0 auto 0 0
+
+    .list-social
+      margin: 0 14px 0 0
+
+      li
+        margin: 0 15px 0 0
+
+        &:last-child
+          margin: 0
+
+        a
+          width: 45px
+          height: 45px
+
+
+.list-check
+  font-size: 14px
+  color: #1d1d1d
+  margin: 0 0 auto
+
+  li
+    position: relative
+    padding: 0 0 0 23px
+    margin: 0 0 15px
+
+    &:last-child
+      margin: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 4px
+      width: 14px
+      height: 10px
+      background: url("../img/check.png") no-repeat center
+        size: contain
+
+//reviews
+.reviews
+  padding: 121px 0 153px
+  position: relative
+
+  &:before, &:after
+    content: ''
+    position: absolute
+
+  &:before
+    left: 55px
+    top: 140px
+    width: 282px
+    height: 483px
+    background: url("../img/left-faces.png") no-repeat center
+      size: contain
+
+  &:after
+    top: 143px
+    right: 36px
+    width: 307px
+    height: 449px
+    background: url("../img/right-faces.png") no-repeat center
+      size: contain
+
+.reviews-slider
+  width: 100%
+  margin: 32px auto 0
+  position: relative
+  z-index: 1
+
+.reviews-box
+  width: 100%
+  max-width: 910px
+  margin: 0 auto 31px
+  box-shadow: 0 10px 24px 0 rgba(141, 149, 214, 0.26)
+  background-color: #ffffff
+  border-radius: 15px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 30px 0 0 52px
+
+  .avatar
+    width: 111px
+    height: 111px
+    border-radius: 50%
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+
+.reviews-box__text
+  width: 432px
+
+.reviews-box__info
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 auto 0 20px
+  color: #1d1d1d
+
+  h3
+    font-weight: bold
+    font-size: 26px
+    margin: 0 0 10px
+
+  .links
+    color: #505fdb
+    font-family: 'Roboto', sans-serif
+
+  ul
+    margin: 22px 0 0
+    width: 182px
+    color: #28292a
+
+    li
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin: 0 0 10px
+
+      &:last-child
+        margin: 0
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  position: relative
+  bottom: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .slick-active
+    background-color: #505fdb
+
+  li
+    width: 10px
+    height: 10px
+    border: solid 1px #505fdb
+      radius: 50%
+
+    margin: 0 8px
+
+    button
+      display: none
+
+.slick-dotted.slick-slider
+  margin: 0
+
+.slick-next
+  z-index: 1
+  width: 50px
+  height: 50px
+  border-radius: 5px
+  border: solid 1px #b7b7b7
+  right: 0
+  transition: .3s ease
+
+  &:hover, &:focus
+    background: #505fdb
+    border-color: #505fdb
+
+    &:before
+      background: url("../img/left.png") no-repeat center
+        size: 10px
+      transform: translate(-50%, -50%) scale(-1, 1)
+
+  &:before
+    content: ''
+    background: url("../img/right.png") transparent no-repeat center
+      size: 10px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 18px
+    position: absolute
+
+
+.slick-prev
+  z-index: 1
+  width: 50px
+  height: 50px
+  border-radius: 5px
+  border: solid 1px #b7b7b7
+  left: 0
+  transition: .3s ease
+
+  &:hover, &:focus
+    background: #505fdb
+    border-color: #505fdb
+
+    &:before
+      background: url("../img/left.png") no-repeat center
+        size: 10px
+      transform: translate(-50%, -50%)
+
+  &:before
+    content: ''
+    background: url("../img/right.png") transparent no-repeat center
+      size: 10px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) scale(-1, 1)
+    width: 10px
+    height: 18px
+    position: absolute
+
+//is-free__form
+.is-free__form
+  color: #fff
+  margin: 0 auto -96px
+  position: relative
+  z-index: 2
+
+  .btn
+    width: 320px
+    height: 65px
+
+  h3
+    font-size: 38px
+    font-family: 'SFUIDisplay-Bold', sans-serif
+    margin: 0 0 15px
+
+  .container
+    border-radius: 15px
+    background: url("../img/form-bg.jpg") no-repeat center
+      size: cover
+    padding: 35px 87px 35px 92px
+    justify-content: space-between
+    align-items: center
+
+  .description
+    font-size: 22px
+    color: #fff
+    width: 100%
+    max-width: 460px
+    margin: 0
+
+
+footer
+  padding: 139px 0 52px
+  background: #f6f7fb
+
+  .container
+    justify-content: space-between
+    align-items: center
+
+  .links
+    font-size: 13px
+    color: #28292a
+
+    &:hover
+      color: #505fdb
+
+  .social-wrapper
+    margin: 0 35px 0 auto
+
+  .logo
+    margin: 0 39px 0 0
+
+  .list-social
+    margin: 0 15px 0 0
+
+    li
+      margin: 0 15px 0 0
+
+      a
+        width: 45px
+        height: 45px
+
+.footer-box
+  display: flex
+  align-items: center
+
+.phone
+  color: #202020
+  font-size: 20.5px
+  font-weight: bold
+
+.mail
+  color: #505fdb
+  font-size: 13px
+
+//modal
+.modal__div
+  position: fixed
+  width: 344px
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+  .modal__close
+    position: absolute
+    right: 20px
+    top: 26px
+    width: 17px
+    height: 17px
+    cursor: pointer
+
+  .modal__wrapper
+    background: #fff
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+
+    box-sizing: border-box
+    position: relative
+    border-radius: 5px
+  .modal-body
+    padding: 29px 32px 37px
+  .modal-footer
+    margin: 25px auto 0
+    width: 100%
+    text-align: center
+    background: #f6f7fb
+    padding: 14px 0
+    color: #797979
+    font-size: 13px
+  h4
+    text-align: center
+    margin: 23px auto
+    color: #505fdb
+    font-size: 20px
+    font-family: 'SFUIDisplay-Bold', sans-serif
+
+
+
+.overlay
+  z-index: 9
+  position: fixed
+  background-color: #313c96
+  opacity: 0.9
+  -moz-opacity: 0.9
+  filter: alpha(opacity=90)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.form
+  label
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 19px
+    .text
+      width: 100%
+      font-size: 11px
+      color: #8a8a8a
+      margin: 0 0 5px
+    &:last-child
+      margin: 0
+  [name="code"]
+    font-size: 20px
+    text-align: center
+    color: #ff0000
+    font-weight: normal
+    border-color: #ff0000
+    &::placeholder
+      color: #ff0000
+  .label-key
+    .text
+      color: #505fdb
+    input
+      font-size: 16px
+      color: #505fdb
+      &::placeholder
+        color: #505fdb
+
+  button
+    width: 280px
+    height: 50px
+    font-size: 18px
+    margin: 34px auto 0
+
+  .icon
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0, -50%)
+
+  label.checkbox
+    margin: 30px 0 0
+    flex-wrap: nowrap
+  .links
+    color: #8a8a8a
+    font-size: 13px
+    margin: 16px auto 0
+    text-align: center
+
+.error.text-center
+  text-align: center
+
+.error
+  color: #ff0000
+  width: 100%
+  text-align: left
+  font-size: 12px
+  margin: 5px auto 0
+
+.img-modal
+  margin: 12px auto 0
+  text-align: center
+  img
+    margin: 0 auto
+
+.thanks-info
+  text-align: center
+  font-size: 14px
+  color: #1d1d1d
+  max-width: 260px
+  margin: 0 auto
+  p
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+
+button
+  outline: none
+  border: none
+  box-shadow: none
+  box-sizing: border-box
+  cursor: pointer
+
+input
+  width: 100%
+  padding: 0 15px 16px 0
+  font-size: 14px
+  color: #8a8a8a
+  font-family: $default-font
+  outline: none
+  border: none
+    bottom: 1px solid rgba(#cccccc, .5)
+  box-sizing: border-box
+
+  &::placeholder
+    color: #8a8a8a
+
+.modal-title
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  color: #1d1d1d
+  font-size: 20px
+  font-family: 'SFUIDisplay-Bold', sans-serif
+  margin: 0 0 44px
+
+  .icon
+    margin: 0 10px 0 0
+    width: 21px
+    height: 17px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  margin: 31px 0 0
+
+  &:last-child
+    margin: 0
+
+  .checkbox-inp
+    display: none
+
+  .checkbox-custom
+    position: relative
+    width: 20px
+    min-width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    border: none
+      radius: 5px
+    background: #505fdb
+    cursor: pointer
+    transition: .3s ease
+
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background: url("../img/check-white.png") no-repeat center
+        size: contain
+      width: 12px
+      height: 10px
+
+  .label
+    display: inline-block
+    vertical-align: middle
+    color: #676767
+    cursor: pointer
+    font-size: 12px
+    margin: 0 0 0 10px
+
+  .checkbox-inp:checked + .checkbox-custom
+    &:before
+      background: transparent
+
+
+.mobile-menu
+  display: none
+  z-index: 10
+  position: fixed
+  background: #fff
+  right: 0
+  top: 0
+  height: 100%
+  overflow-y: auto
+  width: 384px
+
+.mobile-menu__wrapper
+  padding: 143px 45px 50px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  position: relative
+  height: 100%
+  overflow-y: auto
+
+  .btn-close
+    position: absolute
+    top: 39px
+    right: 31px
+    cursor: pointer
+    z-index: 1
+    width: 35px
+    height: 24px
+
+  .menu
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 404px
+
+    li
+      margin: 0 0 20px
+
+      &:last-child
+        margin: 0
+
+      a
+        text-transform: uppercase
+        color: #505fdb
+        font-size: 26px
+        font-weight: bold
+
+  .btn-white
+    margin: 21px 0 39px
+    width: 91px
+    min-height: 36px
+
+  .btn-red
+    width: 207px
+    min-height: 48px
+
+  .social-wrapper
+    margin: 0
+
+    .list-social
+      li
+        a
+          width: 37px
+          height: 37px
+
+.img-mobile, .btn-add
+  display: none
+
+
+@import "media"
+// Всегда в конце
